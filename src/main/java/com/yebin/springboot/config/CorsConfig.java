@@ -10,7 +10,7 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * 解决前端包跨域问题
- * SpringSecurity跨域会有问题
+ * SpringSecurity跨域会有问题，可以使用.cors()关闭
  */
 
 
