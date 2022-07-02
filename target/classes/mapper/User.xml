@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--从mybatis中文网——入门取来后，需要修改namespace-->
-<mapper namespace="com.yebin.springboot.mapper.UserMapper">
+<mapper namespace="com.yebin.springboot2.mapper.UserMapper">
     <update id="update">
         -- 判断username是否为空
         -- 密码不在这里修改
