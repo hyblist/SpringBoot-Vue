@@ -4,7 +4,7 @@
     <!--padding-top: 20px 调整高度-->
     <div style="text-align: center ;padding-top: 20px ;font-size: 50px"><span @click="loginShow">欢迎来到hyblist的后台😜</span></div>
     <!--style="margin: 100px 调整高度-->
-      <div style="margin: 150px auto;  background-color: #fff;width:350px;height:300px;padding:20px;border-radius: 10px" v-show="login_show">
+      <div style="margin: 150px auto;  background-color: #fff;width:370px;height:320px;padding:20px;border-radius: 10px" v-show="login_show">
         <div style="margin: 20px 0;text-align: center;font-size: 24px;color: rgba(0,0,0,0.86)"><b>登录<i class="el-icon-milk-tea"></i></b></div>
         <!--:model="user"很关键，ref="userForm"校验数据，如果符合就执行-->
         <el-form :model="user" :rules="rules" ref="userForm">
@@ -14,6 +14,9 @@
         <el-form-item prop="password">
           <el-input size="medium" style="margin: 10px 0" prefix-icon="el-icon-lock" show-password v-model="user.password"></el-input>
         </el-form-item>
+          <div style="font-size: 10px ; margin: auto">
+            <el-checkbox label="记住我" name="remember"></el-checkbox>
+          </div>
         </el-form>
         <div style="margin: 10px 0;text-align: center">
           <el-button type="success" plain size="small" autocomplete="off" @click="touristLogin">游客</el-button>
@@ -36,11 +39,11 @@ export default {
       rules: {
         username: [
           {required: true, message: '请输入用户名', trigger: 'blur'},
-          {min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur'}
+          {min: 3, max: 20, message: '长度在 3 到 20 个字符', trigger: 'blur'}
         ],
         password: [
           {required: true, message: '请输入密码', trigger: 'blur'},
-          {min: 3, max: 5, message: '长度在 3 到 5 个字符', trigger: 'blur'}
+          {min: 3, max: 20, message: '长度在 3 到 20 个字符', trigger: 'blur'}
         ],
       }
     }

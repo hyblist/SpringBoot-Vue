@@ -7,12 +7,14 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yebin.springboot.controller.dto.UserDTO;
 import com.yebin.springboot.entity.User;
 import com.yebin.springboot.service.IUserService;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
+@Controller
 @RestController
 @RequestMapping("/user")//统一加/user，如
 public class UserController {
