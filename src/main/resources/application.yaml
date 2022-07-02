@@ -1,0 +1,20 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 9090
+# 应用名称
+spring:
+  application:
+  name: springboot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_project?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+
+# mybatis和mybatis-plus只能存在一个，要不然会打架，所以导入依赖只能存在其中一个
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 日志
+    true map-underscore-to-camel-case: true
+

@@ -1,0 +1,22 @@
+/*定制样式*/
+
+/* * 全局元素生效 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*可以随意起名字*/
+.ml-10{
+    margin-left: 10px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.pd-10{
+    padding: 10px 0;
+}

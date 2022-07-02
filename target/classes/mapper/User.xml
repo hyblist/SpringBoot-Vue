@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--从mybatis中文网——入门取来后，需要修改namespace-->
+<mapper namespace="com.yebin.springboot.mapper.UserMapper">
+    <update id="update">
+        -- 判断username是否为空
+        -- 密码不在这里修改
+        -- 注意要加","符号，要不然会报错
+        update sys_user
+        <set>
+
+            <if test="username != null">
+                username = #{username},
+            </if>
+
+            <if test="nickname != null">
+                nickname = #{nickname},
+            </if>
+            <if test="email != null">
+                email = #{email},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+            </if>
+            <if test="address != null">
+                address = #{address}
+            </if>
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>
+</mapper>
