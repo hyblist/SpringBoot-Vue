@@ -1,13 +1,13 @@
 <component name="libraryTable">
-  <library name="Maven: org.springframework.security:spring-security-config:5.3.6.RELEASE">
+  <library name="Maven: commons-lang:commons-lang:2.4">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-config/5.3.6.RELEASE/spring-security-config-5.3.6.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-config/5.3.6.RELEASE/spring-security-config-5.3.6.RELEASE-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository/commons-lang/commons-lang/2.4/commons-lang-2.4-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../repository/org/springframework/security/spring-security-config/5.3.6.RELEASE/spring-security-config-5.3.6.RELEASE-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../repository/commons-lang/commons-lang/2.4/commons-lang-2.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

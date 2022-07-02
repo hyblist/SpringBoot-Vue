@@ -1,12 +1,16 @@
 package com.yebin.springboot.config;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.Ordered;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
+
 /**
  * 解决前端包跨域问题
+ * SpringSecurity跨域会有问题
  */
 
 
